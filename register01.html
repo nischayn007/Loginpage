@@ -194,7 +194,7 @@
       <p>Use a minimum of 10 characters, including uppercase letters, lowercase letters and numbers.</p>
       <form class="formbox">
         <h3>Password</h3>
-        <input type="password" placeholder="Enter a password" id="password_input">
+        <input type="password" placeholder="Enter a password" id="password_input" required>
         <div id="passeye">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" id="Eye">
             <path
@@ -206,7 +206,7 @@
 
 
         <h3>Confirm Password</h3>
-        <input type="password" placeholder="Confirm your password" id="confirmpass">
+        <input type="password" placeholder="Confirm your password" id="confirmpass" required>
         <div id="confirmeye">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" id="Eye">
             <path
@@ -273,7 +273,8 @@
         // const child = document.getElementById("create_acc");
         // element.insertBefore(para, child);
 
-        alert("Fill the password")
+        // alert("Fill the password")
+        console.log('Fill the password')
       }
 
       else if (password_input.value == confirmpass.value) {
